@@ -6,7 +6,7 @@ from httplib2 import Http
 def main():
     url = 'https://chat.googleapis.com/v1/spaces/AAAACmWw6q8/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=ly36Lxs0rOMA2c6nJzeIwE1lfU3gQjCQ3A6sCgRSRB4%3D'
     bot_message = {
-        'text': 'isso veio pelo terminal testando'}
+        'text': 'Sua Build foi mal sucedida :(  Cheque o status em: https://app.bitrise.io/dashboard'}
     message_headers = {'Content-Type': 'application/json; charset=UTF-8'}
     http_obj = Http()
     response = http_obj.request(
