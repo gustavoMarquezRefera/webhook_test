@@ -11,7 +11,7 @@ def main():
     bot_message = { 'text': f"""------------NEWS---------------
 *Your Bitrise Deploy Failed* 
 *Date and Time*: {datetime.now().strftime("%d/%m/%Y - %H:%M:%S")}   
-*Platform*: *Android*
+*Platform*: *IOS*
 *Workflow*: *Production*
 *Full dashboard Link*: https://app.bitrise.io/dashboard
 """}

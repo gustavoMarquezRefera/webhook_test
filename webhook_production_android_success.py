@@ -9,7 +9,7 @@ def main():
     message_headers = {'Content-Type': 'application/json; charset=UTF-8'}
     url =  'https://chat.googleapis.com/v1/spaces/AAAACmWw6q8/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=ly36Lxs0rOMA2c6nJzeIwE1lfU3gQjCQ3A6sCgRSRB4%3D'
     bot_message = { 'text': f"""------------NEWS---------------
-*Your Bitrise Deploy Failed* 
+*Your Bitrise Deploy was Sucessful* 
 *Date and Time*: {datetime.now().strftime("%d/%m/%Y - %H:%M:%S")}   
 *Platform*: *Android*
 *Workflow*: *Production*
