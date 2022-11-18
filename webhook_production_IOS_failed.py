@@ -1,7 +1,7 @@
 from json import dumps
 from datetime import datetime, timezone
 from httplib2 import Http
-from PIL import Image
+
 
 
 
