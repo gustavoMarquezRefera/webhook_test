@@ -7,7 +7,7 @@ from httplib2 import Http
 
 def main():
     message_headers = {'Content-Type': 'application/json; charset=UTF-8'}
-    url =  'https://chat.googleapis.com/v1/spaces/AAAA6ed3_G8/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=Pb9BXp8aFXV83JWZXShKLsbHCZY4Jzsh5YCkZl6ObUo%3D'
+    url =  'https://chat.googleapis.com/v1/spaces/AAAA6ed3_G8/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=Gx4ifThVUky0TxiYlaFouyBsL5GoPNrt9SpKZ4JIRnE%3D'
     bot_message = { 'text': f"""------------NEWS---------------
 *Your Bitrise Deploy Failed* 
 *Date and Time*: {datetime.now().strftime("%d/%m/%Y - %H:%M:%S")}   
