@@ -9,6 +9,7 @@ def main():
     message_headers = {'Content-Type': 'application/json; charset=UTF-8'}
     test_url =  'https://chat.googleapis.com/v1/spaces/AAAACmWw6q8/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=ly36Lxs0rOMA2c6nJzeIwE1lfU3gQjCQ3A6sCgRSRB4%3D'
     prod_url = 'https://chat.googleapis.com/v1/spaces/AAAA6ed3_G8/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=Gx4ifThVUky0TxiYlaFouyBsL5GoPNrt9SpKZ4JIRnE%3D'
+    sup_url = 'https://chat.googleapis.com/v1/spaces/AAAAqW4uxxw/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=o76rE_HlK3_Gm6dtqB7zmvcbOUJSRtZ5E8D1cp9KahY%3D'
     bot_message = { 'text': f"""------------NEWS---------------
 *Your Bitrise Deploy was Sucessful* 
 *Date and Time*: {datetime.now().strftime("%d/%m/%Y - %H:%M:%S")}   
@@ -22,13 +23,18 @@ def main():
      
     message_headers = {'Content-Type': 'application/json; charset=UTF-8'}
     http_obj = Http()
-    response = http_obj.request(
+    response1 = http_obj.request(
         uri=prod_url,
         method='POST',
         headers=message_headers,
         body=dumps(bot_message),
     )
-    print(response)
+    response2 = http_obj.request(
+        uri=sup_url,
+        method='POST',
+        headers=message_headers,
+        body=dumps(bot_message),
+    )
 
 
 if __name__ == '__main__':
