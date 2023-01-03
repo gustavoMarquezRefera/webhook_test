@@ -29,12 +29,6 @@ def main():
         headers=message_headers,
         body=dumps(bot_message),
     )
-    response2 = http_obj.request(
-        uri=sup_url,
-        method='POST',
-        headers=message_headers,
-        body=dumps(bot_message),
-    )
 
 
 if __name__ == '__main__':
